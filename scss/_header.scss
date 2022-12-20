@@ -1,0 +1,175 @@
+.header {
+   padding-top: 5.5rem;
+
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8rem;
+   }
+   &__logo {
+      color: $color-black;
+      margin-right: 37rem;
+   }
+
+   &__block {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 2rem;
+   }
+   &__nav {
+		margin-right: 7.4rem;
+   }
+   &__list {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__item {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      color: $color-black;
+      color: inherit;
+   }
+   &__item:not(:last-child) {
+      margin-right: 10.6rem;
+   }
+   &__link a {
+      color: inherit;
+   }
+   &__form {
+      position: relative;
+      width: 6rem;
+      margin: 0 auto;
+      height: 4.2rem;
+   }
+   &__input {
+      height: 4.2rem;
+      width: 0;
+      padding: 0 4.2rem 0 1.5rem;
+      border: none;
+      border-bottom: 2px solid transparent;
+      outline: none;
+      background: transparent;
+      transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+      position: absolute;
+      top: 1rem;
+      right: 0;
+      z-index: 2;
+      &:focus {
+         width: 30rem;
+         z-index: 1;
+         border-bottom: 2px solid #f9f0da;
+      }
+   }
+
+   &__btn {
+      background: url("../images/icons/search.svg") center / cover no-repeat;
+      width: 2.5rem;
+      height: 2.2rem;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 6rem;
+      cursor: pointer;
+   }
+   &__hero {
+		
+		position: relative;
+      display: flex;
+      align-items: center;
+		justify-content: flex-end;
+   }
+   &__descr {
+		padding-left: vw(100);
+		padding-right: vw(170);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: absolute;
+      width: vw(691);
+      height: vw(550);
+		right: 52%;
+		z-index: 5;
+		background: linear-gradient(91.1deg, rgba(244, 246, 245, 0.9) -7.89%, rgba(255, 255, 255, 0.9) 132.55%);
+   }
+   &__title {
+		margin-bottom: vw(10);
+	}
+   &__text {
+		font-family: "Inter", sans-serif;
+      font-weight: 200;
+      font-size: 3.2rem;
+      line-height: 3.9rem;
+   }
+   &__image {
+		width: vw(1159);
+      height: vw(739);
+
+   }
+	&__img {
+		width: 100%;
+      height: auto;
+		
+	}
+}
+
+@media screen and(max-width:1280px) {
+	.header {
+		&__logo {
+			font-size: 3.6rem;
+			margin-right: 10rem;
+		}
+	}
+}
+
+@media screen and(max-width:992px) {
+	.header {
+		&__text {
+			font-family: "Inter", sans-serif;
+			font-weight: 200;
+			font-size: 2.2rem;
+			line-height: 2.9rem;
+		}
+		&__block {
+			display: none;
+		}
+	}
+}
+
+@media screen and(max-width:767px) {
+	.header {
+		&__text {
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+		}
+		&__logo {
+			font-size: 2.6rem;
+			margin-right: 5rem;
+		}
+	}
+}
+
+@media screen and(max-width:575px) {
+	.header {
+		&__text {
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+		}
+		&__logo {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media screen and(max-width:320px) {
+	.header {
+		&__text {
+			font-size: .8rem;
+			line-height: 1rem;
+		}
+		&__logo {
+			font-size: 1.2rem;
+		}
+	}
+}
